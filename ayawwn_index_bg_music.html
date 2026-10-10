@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101014">
+<title>your corner of the internet</title>
+<style>
+:root{--bg:#101014;--panel:rgba(255,255,255,.055);--panel2:rgba(255,255,255,.085);--text:#f4f1f7;--muted:#aaa5b5;--line:rgba(255,255,255,.13);--accent:#ff647c;--accent2:#9d83ff;--lime:#d8ff79;--shadow:0 22px 70px #0005}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#352044 0,transparent 34rem),radial-gradient(ellipse at 100% 28%,#1b3850 0,transparent 30rem),var(--bg);color:var(--text);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button,.button{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:.72rem 1rem;border-radius:999px;cursor:pointer;transition:transform .2s,border-color .2s,background .2s}button:hover,.button:hover{transform:translateY(-2px);border-color:#ffffff55;background:#ffffff13}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--lime);outline-offset:3px}.wrap{width:min(1100px,calc(100% - 32px));margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 0;gap:12px}.brand{font-weight:850;letter-spacing:-.04em}.brand span{color:var(--accent)}.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a{font-size:.88rem;color:var(--muted);padding:.5rem .7rem;border-radius:999px}.nav a:hover{color:var(--text);background:var(--panel)}.hero{min-height:68vh;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:40px;padding:65px 0 80px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:var(--muted);font-size:.83rem;background:#ffffff06}.dot{width:8px;height:8px;background:var(--lime);border-radius:50%;box-shadow:0 0 14px var(--lime)}h1{font-size:clamp(3.4rem,8vw,7rem);line-height:.91;letter-spacing:-.085em;margin:24px 0}h1 .gradient{background:linear-gradient(100deg,var(--accent),#ffb86b 48%,var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{max-width:560px;color:#c3bdcb;font-size:1.08rem}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.primary{background:var(--accent);color:#171018;border-color:transparent;font-weight:800}.primary:hover{background:#ff8294}.tiny-note{font-size:.8rem;color:var(--muted);margin-top:16px}.profile-card{position:relative;border:1px solid var(--line);border-radius:28px;padding:20px;background:linear-gradient(145deg,#ffffff13,#ffffff03);box-shadow:var(--shadow);transform:rotate(2deg);animation:float 6s ease-in-out infinite}.profile-card:before{content:"";position:absolute;inset:-12px 24px 24px -12px;border:1px solid #9d83ff44;border-radius:30px;z-index:-1}.avatar{aspect-ratio:4/4.3;border-radius:20px;background:linear-gradient(135deg,#ff647c55,#9d83ff55),repeating-linear-gradient(135deg,#ffffff0c 0 1px,transparent 1px 12px);display:grid;place-items:center;text-align:center;overflow:hidden;position:relative}.avatar .emoji{font-size:5rem;filter:drop-shadow(0 10px 25px #0007)}.avatar p{position:absolute;bottom:8px;margin:0;background:#111a;padding:6px 12px;border-radius:999px;font-size:.8rem}.card-foot{display:flex;justify-content:space-between;align-items:center;padding-top:15px;gap:12px}.card-foot strong{font-size:1.02rem}.card-foot small{color:var(--muted)}.sticker{position:absolute;right:-18px;top:26px;background:var(--lime);color:#202015;padding:10px 13px;border-radius:12px;font-weight:900;transform:rotate(9deg);box-shadow:var(--shadow)}section{padding:50px 0;scroll-margin-top:20px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:850}h2{font-size:clamp(2rem,5vw,3.3rem);line-height:1;letter-spacing:-.06em;margin:8px 0 0}.section-head p{max-width:400px;color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.panel{border:1px solid var(--line);background:var(--panel);border-radius:22px;padding:22px;backdrop-filter:blur(12px);min-width:0}.about-main{grid-column:span 7}.about-side{grid-column:span 5}.panel h3{margin:0 0 8px;font-size:1.18rem;letter-spacing:-.03em}.panel p{color:#c1bbc9;margin:0}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.chip{font-size:.82rem;padding:7px 10px;border:1px solid var(--line);border-radius:999px;color:#d5cfdd;background:#ffffff04}.fact-list{display:grid;gap:12px;margin-top:16px}.fact{display:flex;gap:10px;align-items:start}.fact b{color:var(--lime)}.show-card{grid-column:span 4;min-height:180px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s}.show-card:hover{transform:translateY(-4px)}.show-card .symbol{font-size:2rem}.show-card .tag{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}.show-card h3{font-size:1.35rem;margin:8px 0}.show-card p{font-size:.9rem}.memes{grid-column:span 6;min-height:180px;display:flex;flex-direction:column;justify-content:space-between}.quote{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;line-height:1.15;letter-spacing:-.045em}.meme-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}.music-panel{grid-column:span 6}.photos-panel{grid-column:span 12}.photo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}.photo-slot{aspect-ratio:1;border-radius:16px;border:1px dashed #ffffff42;background:linear-gradient(135deg,#ff647c14,#9d83ff19);display:grid;place-items:center;text-align:center;color:var(--muted);overflow:hidden;position:relative;cursor:pointer}.photo-slot img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.photo-slot span{padding:12px;font-size:.85rem}.guestbook{grid-column:span 7}.guest-list-panel{grid-column:span 5}.form{display:grid;gap:10px;margin-top:16px}.form input,.form textarea{width:100%;border:1px solid var(--line);background:#09090d88;color:var(--text);border-radius:13px;padding:12px 14px}.form textarea{min-height:100px;resize:vertical}.form small,.muted{color:var(--muted)}.guest-list{display:grid;gap:10px;margin-top:16px;max-height:340px;overflow:auto}.guest-note{padding:12px;border-radius:14px;background:#ffffff08;border:1px solid #ffffff0c;overflow-wrap:anywhere}.guest-note strong{display:block;font-size:.9rem}.guest-note p{font-size:.9rem;margin-top:4px}.empty{color:var(--muted);font-size:.9rem}.footer{padding:40px 0 28px;color:var(--muted);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:40px;font-size:.88rem}.socials{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.socials a{border:1px solid var(--line);border-radius:999px;padding:8px 12px;font-size:.9rem;background:#ffffff05}.socials a:hover{border-color:var(--accent)}.bg-music{position:fixed;right:16px;bottom:16px;z-index:30;width:min(310px,calc(100vw - 32px));color:var(--text)}.bg-music-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid #ffffff2a;background:#17151ff2;box-shadow:0 12px 36px #0008;border-radius:16px;padding:12px 15px;font-weight:800}.bg-music-toggle .music-dot{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--accent);color:#1a1118}.bg-music-panel{display:none;margin-bottom:9px;padding:16px;border:1px solid var(--line);border-radius:18px;background:#17151ff5;box-shadow:0 16px 50px #0009;backdrop-filter:blur(16px)}.bg-music.open .bg-music-panel{display:block}.bg-music-panel label{display:block;color:var(--muted);font-size:.82rem;margin-bottom:7px}.bg-music-panel select{width:100%;padding:10px 12px;border-radius:11px;border:1px solid var(--line);background:#101014;color:var(--text);margin-bottom:10px}.bg-music-actions{display:flex;gap:8px}.bg-music-actions button{flex:1;padding:.6rem .75rem}.bg-music-status{font-size:.8rem;color:var(--muted);margin:0 0 12px}.bg-music-status.playing{color:var(--lime)}@media(max-width:480px){.bg-music{right:10px;bottom:10px;width:min(290px,calc(100vw - 20px))}.bg-music-panel{padding:13px}}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--lime);color:#1b1a12;padding:12px 18px;border-radius:999px;font-weight:800;opacity:0;pointer-events:none;transition:.25s;z-index:10;box-shadow:var(--shadow)}.toast.show{opacity:1;transform:translate(-50%,0)}.secret-mode{--accent:#d8ff79;--accent2:#62e8d1}.reveal{animation:reveal .7s both}@keyframes float{0%,100%{transform:rotate(2deg) translateY(0)}50%{transform:rotate(0) translateY(-9px)}}@keyframes reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:36px;padding:45px 0 55px;min-height:auto}.profile-card{max-width:390px;width:90%;margin:0 auto}.nav{display:none}.about-main,.about-side,.show-card,.memes,.music-panel,.guestbook,.guest-list-panel{grid-column:span 12}.section-head{align-items:start;flex-direction:column}.photo-grid{grid-template-columns:repeat(2,1fr)}h1{font-size:clamp(3.5rem,17vw,6rem)}section{padding:36px 0}.panel{padding:18px}}@media(min-width:761px){.hero-copy{padding-right:10px}}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#top">my little <span>internet.</span></a>
+  <nav class="nav" aria-label="Main navigation"><a href="#about">about</a><a href="#faves">favourites</a><a href="#socials">socials</a><a href="#guestbook">guestbook</a></nav>
+  <button id="themeBtn" type="button" aria-label="Toggle colour mood">✦ mood</button>
+</header>
+<main id="top" class="wrap">
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="dot"></span> a small corner of the internet</div>
+      <h1>hi, i'm<br><span class="gradient">YOUR NAME.</span></h1>
+      <p class="lead">Part quiet observer, part professional overthinker, part walking collection of random tabs. This is the little place where my interests, jokes, and internet lore live.</p>
+      <div class="hero-actions"><a class="button primary" href="#about">get to know me ↘</a><button id="surpriseBtn" type="button">surprise me ✧</button></div>
+      <p class="tiny-note">made with questionable sleep schedules & good intentions.</p>
+    </div>
+    <div class="profile-card">
+      <div class="sticker">100% human* <span aria-hidden="true">✷</span></div>
+      <div class="avatar" id="heroAvatar"><div class="emoji">🪐</div><p>your photo goes here ↗</p></div>
+      <div class="card-foot"><div><strong>the main character</strong><br><small>currently loading...</small></div><span aria-hidden="true">✦ ☻ ✦</span></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-head"><div><div class="kicker">01 / the lore</div><h2>about me.</h2></div><p>A short intro, not a job interview. Keep what fits, change what doesn't.</p></div>
+    <div class="grid">
+      <article class="panel about-main"><h3>so, who am i?</h3><p>I'm someone who likes good stories, calm vibes, stupidly funny jokes, and conversations that go from nonsense to deep at 2 a.m. I'm a little shy at first, but give me the right topic and suddenly there's a whole podcast episode.</p><div class="chips"><span class="chip">introvert-ish</span><span class="chip">movie enjoyer</span><span class="chip">calm chaos</span><span class="chip">chronically curious</span></div></article>
+      <article class="panel about-side"><h3>currently in my tabs</h3><div class="fact-list"><div class="fact"><b>✦</b><span>Thinking about a show I finished ages ago.</span></div><div class="fact"><b>✦</b><span>Saving memes I'll forget to send.</span></div><div class="fact"><b>✦</b><span>Listening to the same song for the 47th time.</span></div><div class="fact"><b>✦</b><span>Trying to make this website cooler.</span></div></div></article>
+    </div>
+  </section>
+
+  <section id="faves">
+    <div class="section-head"><div><div class="kicker">02 / comfort media</div><h2>the favourites.</h2></div><p>Swap these cards for your actual favourites. The taste department is yours.</p></div>
+    <div class="grid">
+      <article class="panel show-card"><div><div class="symbol">🩸</div><div class="tag">TV show / crime</div><h3>Dexter</h3><p>Morally complicated people making very questionable decisions. Great television, terrible life advice.</p></div><span class="chip">rewatch potential: high</span></article>
+      <article class="panel show-card"><div><div class="symbol">🎬</div><div class="tag">movies</div><h3>the film shelf</h3><p>Add a favourite movie, director, or the film you won't stop recommending.</p></div><span class="chip">cinema brain activated</span></article>
+      <article class="panel show-card"><div><div class="symbol">📺</div><div class="tag">one more episode</div><h3>the watchlist</h3><p>For shows you mean to start, shows you abandoned, and shows that changed your brain chemistry.</p></div><span class="chip">just one more</span></article>
+    </div>
+  </section>
+
+  <section id="random">
+    <div class="section-head"><div><div class="kicker">03 / certified nonsense</div><h2>random facts & memes.</h2></div><p>A tiny rotating collection of thoughts that probably didn't need to be shared.</p></div>
+    <div class="grid">
+      <article class="panel memes"><div><div class="kicker">random thought generator</div><div class="quote" id="thought">My brain has 47 tabs open and at least 12 are playing music.</div></div><div class="meme-controls"><span class="muted" id="thoughtCount">thought 01 / 08</span><button id="nextThought" type="button">another one ↻</button></div></article>
+      <article class="panel memes"><div><div class="kicker">totally real statistics</div><div class="quote" id="stat">87% of my personality is saved posts.</div></div><div class="meme-controls"><span class="muted">source: trust me bro</span><button id="statBtn" type="button">recalculate ↗</button></div></article>
+    </div>
+  </section>
+
+  <section id="socials">
+    <div class="section-head"><div><div class="kicker">04 / elsewhere online</div><h2>socials & elsewhere.</h2></div><p>Find me in the other corners of the internet.</p></div>
+    <article class="panel"><div class="socials"><a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://spotify.com/" target="_blank" rel="noreferrer">Spotify ↗</a><a href="mailto:hello@example.com">Email ↗</a></div><p class="muted" style="margin-top:18px;font-size:.83rem">Replace these example links with your real profile URLs before publishing.</p></article>
+  </section>
+
+  <section id="photos">
+    <div class="section-head"><div><div class="kicker">05 / camera roll</div><h2>little snapshots.</h2></div><p>A photo hosted with this website. Upload photo_slot_01.jpg beside index.html in your GitHub repository, or change the filename below to match yours.</p></div>
+    <article class="panel photos-panel"><div class="photo-grid" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+      <div class="photo-slot"><img src="photo_slot_01.jpg" alt="A photo from my camera roll" loading="lazy" onerror="this.style.display='none';this.parentElement.insertAdjacentHTML('beforeend','<span>Photo not found — upload photo_slot_01.jpg beside index.html</span>')"></div>
+    </div></article>
+  </section>
+
+  <section id="guestbook">
+    <div class="section-head"><div><div class="kicker">06 / leave a trace</div><h2>guestbook.</h2></div><p>Say hi, drop a harmless hot take, or leave a tiny piece of internet lore.</p></div>
+    <div class="grid">
+      <article class="panel guestbook"><h3>leave a message ✎</h3><p>Be nice. The internet has enough weirdos already.</p>
+        <form class="form" id="guestForm"><input id="guestName" maxlength="32" placeholder="your name / nickname" required><textarea id="guestMessage" maxlength="280" placeholder="write something (280 characters max)..." required></textarea><button class="primary" type="submit">sign the guestbook ↗</button><small>Demo mode: messages are saved only in this browser on this device, not shared with other visitors.</small></form>
+      </article>
+      <article class="panel guest-list-panel"><h3>messages from the void</h3><div id="guestList" class="guest-list"><p class="empty">No messages yet. Be the first to leave one.</p></div><button id="clearGuestbook" type="button" style="margin-top:12px">clear local messages</button></article>
+    </div>
+  </section>
+  <footer class="footer"><span>© <span id="year"></span> YOUR NAME — made on the internet, for the internet.</span><a href="#top">back to the top ↑</a><span>built with HTML, CSS & a suspicious amount of ✦</span></footer>
+</main>
+<aside class="bg-music" id="bgMusic" aria-label="Background music player">
+  <div class="bg-music-panel" id="bgMusicPanel">
+    <p class="bg-music-status" id="bgMusicStatus" aria-live="polite">Nothing playing — choose a track.</p>
+    <label for="bgTrack">choose your soundtrack</label>
+    <select id="bgTrack">
+      <option value="song1.mp3">Let It Happen</option>
+      <option value="song2.mp3">Bohemian Rhapsody</option>
+      <option value="song3.mp3">Money Trees</option>
+    </select>
+    <div class="bg-music-actions"><button id="bgPlay" type="button">▶ play</button><button id="bgStop" type="button">■ stop</button></div>
+  </div>
+  <button class="bg-music-toggle" id="bgMusicToggle" type="button" aria-expanded="false" aria-controls="bgMusicPanel"><span><span class="music-dot">♫</span> &nbsp; background music</span><span id="bgMusicChevron">＋</span></button>
+  <audio id="bgAudio" preload="none"></audio>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const $=s=>document.querySelector(s);
+const toast=(msg)=>{const t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove('show'),2300)};
+$('#year').textContent=new Date().getFullYear();
+
+const bgMusic=$('#bgMusic'), bgAudio=$('#bgAudio'), bgTrack=$('#bgTrack'), bgPlay=$('#bgPlay'), bgStop=$('#bgStop'), bgStatus=$('#bgMusicStatus');
+const trackNames={'song1.mp3':'Let It Happen','song2.mp3':'Bohemian Rhapsody','song3.mp3':'Money Trees'};
+function updateMusicStatus(text,playing=false){bgStatus.textContent=text;bgStatus.classList.toggle('playing',playing);bgPlay.textContent=bgAudio.paused?'▶ play':'❚❚ pause'}
+function selectTrackAndPlay(){
+  const nextSrc=bgTrack.value;
+  // One shared audio element means a new track can never overlap the previous one.
+  bgAudio.pause(); bgAudio.currentTime=0;
+  if(!bgAudio.src || !bgAudio.src.endsWith('/'+nextSrc)) bgAudio.src=nextSrc;
+  bgAudio.load();
+  bgAudio.play().then(()=>updateMusicStatus('now playing: '+trackNames[nextSrc],true)).catch(()=>updateMusicStatus('Could not play this file — check that '+nextSrc+' is uploaded.'));
+}
+$('#bgMusicToggle').addEventListener('click',()=>{const open=bgMusic.classList.toggle('open');$('#bgMusicToggle').setAttribute('aria-expanded',String(open));$('#bgMusicChevron').textContent=open?'−':'＋'});
+bgTrack.addEventListener('change',selectTrackAndPlay);
+bgPlay.addEventListener('click',()=>{if(bgAudio.paused){if(!bgAudio.src){bgAudio.src=bgTrack.value;bgAudio.load()}bgAudio.play().then(()=>updateMusicStatus('now playing: '+trackNames[bgTrack.value],true)).catch(()=>updateMusicStatus('Could not play this file — check that '+bgTrack.value+' is uploaded.'))}else{bgAudio.pause();updateMusicStatus('paused: '+trackNames[bgTrack.value])}});
+bgStop.addEventListener('click',()=>{bgAudio.pause();bgAudio.currentTime=0;updateMusicStatus('stopped — choose a track.')});
+bgAudio.addEventListener('ended',()=>updateMusicStatus('finished: '+trackNames[bgTrack.value]));
+bgAudio.addEventListener('error',()=>updateMusicStatus('File not found — upload '+bgTrack.value+' beside index.html.'));
+
+$('#themeBtn').addEventListener('click',()=>{document.body.classList.toggle('secret-mode');toast(document.body.classList.contains('secret-mode')?'secret lime mode unlocked ✦':'back to the usual vibes')});
+const thoughts=[
+'My brain has 47 tabs open and at least 12 are playing music.',
+'“I’ll sleep early tonight” — a work of fiction.',
+'I need a vacation from the imaginary arguments I win in the shower.',
+'Somewhere out there, my future self is thanking me for one (1) good decision.',
+'Opening the fridge again like the inventory updated.',
+'The plan was simple. Then I started thinking.',
+'If overthinking burned calories, I would be a perpetual-motion machine.',
+'Me: I should be productive. Also me: let’s redesign everything.'
+];let thoughtIndex=0;
+$('#nextThought').addEventListener('click',()=>{thoughtIndex=(thoughtIndex+1)%thoughts.length;$('#thought').textContent=thoughts[thoughtIndex];$('#thoughtCount').textContent=`thought ${String(thoughtIndex+1).padStart(2,'0')} / ${String(thoughts.length).padStart(2,'0')}`});
+const stats=['87% of my personality is saved posts.','100% chance I forgot why I opened this tab.','Research says I deserve a snack. Research is me.','Breaking: local person has another playlist.','Sources confirm: vibes remain unverified.','The group chat is my unpaid comedy club.'];
+$('#statBtn').addEventListener('click',()=>$('#stat').textContent=stats[Math.floor(Math.random()*stats.length)]);
+$('#surpriseBtn').addEventListener('click',()=>{const opts=['You found the surprise button. Your reward: a tiny virtual high-five ✋','Achievement unlocked: clicked a thing.','Secret message: drink some water, internet stranger.','Plot twist: you are now legally required to have a good day.'];toast(opts[Math.floor(Math.random()*opts.length)]);});
+const guestKey='cornerGuestbookMessages_v1';
+function loadGuests(){try{return JSON.parse(localStorage.getItem(guestKey)||'[]')}catch(e){return []}}
+function renderGuests(){const list=$('#guestList'),items=loadGuests();list.replaceChildren();if(!items.length){const p=document.createElement('p');p.className='empty';p.textContent='No messages yet. Be the first to leave one.';list.appendChild(p);return}items.slice().reverse().forEach(item=>{const div=document.createElement('div');div.className='guest-note';const strong=document.createElement('strong');strong.textContent=item.name;const p=document.createElement('p');p.textContent=item.message;const small=document.createElement('small');small.className='muted';small.textContent=item.date;div.append(strong,p,small);list.appendChild(div)})}
+$('#guestForm').addEventListener('submit',e=>{e.preventDefault();const name=$('#guestName').value.trim(),message=$('#guestMessage').value.trim();if(!name||!message)return;const items=loadGuests();items.push({name,message,date:new Date().toLocaleDateString()});try{localStorage.setItem(guestKey,JSON.stringify(items.slice(-30)));}catch(e){toast('could not save in this browser');return}$('#guestMessage').value='';renderGuests();toast('message saved on this device ✦')});
+$('#clearGuestbook').addEventListener('click',()=>{if(confirm('Clear all guestbook messages saved in this browser?')){localStorage.removeItem(guestKey);renderGuests();toast('local messages cleared')}});
+renderGuests();
+</script>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+</body>
+</html>
